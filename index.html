@@ -258,7 +258,12 @@
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/p_1_devconnector.png">
+                        <a 
+                            class="portfolio-box" 
+                            data-toggle="modal" 
+                            data-target="#myModal"
+                            onclick="appendDataToModel('project_1')"
+                        >
                             <img class="img-fluid" src="assets/img/p_1_devconnector.png" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-20">ReactJs / NodeJs</div>
@@ -267,7 +272,12 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/p_2_your_places.png">
+                        <a 
+                            class="portfolio-box" 
+                            data-toggle="modal" 
+                            data-target="#myModal"
+                            onclick="appendDataToModel('project_2')"
+                        >
                             <img class="img-fluid" src="assets/img/p_2_your_places.png" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-20">ReactJs / NodeJs</div>
@@ -276,7 +286,12 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/p_3_burger.png">
+                        <a 
+                            class="portfolio-box"
+                            data-toggle="modal" 
+                            data-target="#myModal"
+                            onclick="appendDataToModel('project_3')"
+                        >
                             <img class="img-fluid" src="assets/img/p_3_burger.png" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-20">ReactJs</div>
@@ -287,6 +302,197 @@
                 </div>
             </div>
         </div>
+
+        <!-- PROJECT MODAL -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body bg-light">
+                        <div id="projects">
+
+                            <!-- PROJECT 1 -->
+                            <div id="project_1" class="d-none project">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Title:&nbsp;</span>
+                                            DevConnector
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Technologies Used:&nbsp;</span>
+                                            <ul class="list-inline d-inline-block mb-0">
+                                                <li class="d-inline"><b>N</b>odeJs</li>
+                                                <li class="d-inline"><b>R</b>eactJs</li>
+                                                <li class="d-inline"><b>H</b>TML</li>
+                                                <li class="d-inline"><b>C</b>SS</li>
+                                                <li class="d-inline"><b>B</b>ootstrap4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Database:&nbsp;</span>
+                                            MongoDB
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Web Hosting:&nbsp;</span>
+                                            Heroku
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Git Repo:&nbsp;</span>
+                                            <a href="https://github.com/prvn-breach/DevConnector.git">
+                                                <i class="fas fa-external-link-alt" style='color:red'></i>
+                                                DevConnector.git
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Website:&nbsp;</span>
+                                            <a href="https://programmers-connector.herokuapp.com/">
+                                                <i class="fas fa-external-link-alt" style='color:red'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Description:&nbsp;</span>
+                                            <p class="text-justify">The main purpose of this project coordinate with programmers at one place
+                                                easily. In this application we can post technical questions, we can find solution from
+                                                number of developers. Application is very useful to programmers to solve logical issues
+                                                and technically.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project_2" class="d-none project">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Title:&nbsp;</span>
+                                            YourPlaces
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Technologies Used:&nbsp;</span>
+                                            <ul class="list-inline d-inline-block mb-0">
+                                                <li class="d-inline"><b>N</b>odeJs</li>
+                                                <li class="d-inline"><b>R</b>eactJs</li>
+                                                <li class="d-inline"><b>H</b>TML</li>
+                                                <li class="d-inline"><b>C</b>SS</li>
+                                                <li class="d-inline"><b>B</b>ootstrap4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Database:&nbsp;</span>
+                                            MongoDB
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Web Hosting:&nbsp;</span>
+                                            Firebase & Heroku
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Git Repo:&nbsp;</span>
+                                            <a href="https://github.com/prvn-breach/YourPlaces-NodeJs.git">
+                                                <i class="fas fa-external-link-alt" style='color:red'></i>
+                                                YourPlaces.git
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Website:&nbsp;</span>
+                                            <a href="https://mern-code.herokuapp.com/">
+                                                <i class="fas fa-external-link-alt" style='color:red'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Description:&nbsp;</span>
+                                            <p class="text-justify">In this app users can add favourite places. Users can view other users
+                                                favourite place. Only authenticated users allowed in this app. User can anytime update
+                                                and Delete the favourite place.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="project_3" class="d-none project">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Title:&nbsp;</span>
+                                            BurgerBuilder
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Technologies Used:&nbsp;</span>
+                                            <ul class="list-inline d-inline-block mb-0">
+                                                <li class="d-inline"><b>R</b>eactJs</li>
+                                                <li class="d-inline"><b>H</b>TML</li>
+                                                <li class="d-inline"><b>C</b>SS</li>
+                                                <li class="d-inline"><b>B</b>ootstrap4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Web Hosting:&nbsp;</span>
+                                            Firebase
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Git Repo:&nbsp;</span>
+                                            <a href="https://github.com/prvn-breach/BurgerReactJS.git">
+                                                <i class="fas fa-external-link-alt" style='color:red'></i>
+                                                BurgerBuilder.git
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Website:&nbsp;</span>
+                                            <a href="https://mern-code.herokuapp.com/">
+                                                <i class="fas fa-external-link-alt" style='color:red'></i>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="font-weight-bold">Description:&nbsp;</span>
+                                            <p class="text-justify">In this app users can add favourite places. Users can view other users
+                                                favourite place. Only authenticated users allowed in this app. User can anytime update
+                                                and Delete the favourite place.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container text-center">
@@ -322,6 +528,7 @@
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Praveen Kumar</div></div>
         </footer>
 
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -346,6 +553,21 @@
                 $("#"+ progress_bar_id).animate({
                     width: width
                 }, 1000);
+            }
+
+            function appendDataToModel(id) {
+                let elements = document.getElementsByClassName('project');
+                for (let i = 0; i < elements.length; i++) {
+                    let project_id = elements[i].getAttribute('id');
+                    let is_display_none = elements[i].getAttribute('class').includes('d-none');
+                    if (is_display_none == false) {
+                        let element = document.getElementById(project_id);
+                        element.classList.add('d-none');
+                    }
+                    if (project_id == id) {
+                        document.getElementById(id).classList.remove('d-none');
+                    }
+                }
             }
         </script>
     </body>

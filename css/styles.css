@@ -10171,3 +10171,18 @@ header.masthead h1 {
   height: 100%;
   background: rgba(0,0,0,0.7);
 }
+
+.modal-lg {
+  width: 50%;
+}
+
+@media(max-width: 961px) {
+  .modal-lg {
+    width: 100%;
+  }
+}
+
+.portfolio-box {
+  cursor: pointer;
+}
+
